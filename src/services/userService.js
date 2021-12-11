@@ -14,7 +14,7 @@ async function validateEmail(email) {
   if (!email) return errors.push({ code: 400, error: 'O campo "e-mail" é obrigatório' });
   if (!validator.isEmail(email)) errors.push({ code: 400, error: 'E-mail inválido' });
   const alreadyExists = await User.findOne({ where: { email } });
-  if (alreadyExists) errors.push({ code: 401, error: 'E-mail já cadastrado' })
+  if (alreadyExists) errors.push({ code: 400, error: 'E-mail já cadastrado' })
 }
 
 function validatePassword(password) {
