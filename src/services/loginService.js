@@ -10,12 +10,12 @@ let rescuedUser;
 
 async function validateEmail(email) {
   if (!email || !validator.isEmail(email)) {
-    errors.push({ code: 400, error: 'invalid email' });
+    errors.push({ code: 400, error: 'E-mail inválido' });
     return;
   }
   const user = await User.findOne({ where: { email } });
   if (!user) {
-    errors.push({ code: 400, error: 'invalid email or password'});
+    errors.push({ code: 400, error: 'E-mail ou senha inválido(s)'});
     return;
   }
   rescuedUser = user;
@@ -23,11 +23,11 @@ async function validateEmail(email) {
 
 function validatePassword(password) {
   if (!rescuedUser || !password) {
-    errors.push({ code: 400, error: 'invalid email or password'});
+    errors.push({ code: 400, error: 'E-mail ou senha inválido(s)'});
     return;
   }
   if (!bcrypt.compareSync(password, rescuedUser.password)) {
-    errors.push({ code: 400, error: 'invalid email or password'});
+    errors.push({ code: 400, error: 'E-mail ou senha inválido(s)'});
   }
 }
 

@@ -21,7 +21,6 @@ async function recover(req, res) {
   if (!email) return res.status(400).json({ message });
 
   const user = await User.findOne({ where: { email }});
-  console.log('Eu sou o eail', email)
   if (!user) return res.status(404).json({ message: 'Algo deu errado'});
 
   const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, { expiresIn: '15m'});

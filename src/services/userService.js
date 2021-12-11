@@ -6,20 +6,20 @@ const { User } = require('../models');
 let errors = [];
 
 function validateName(name) {
-  if (!name) return errors.push({ code: 400, error: 'field "name" is required' });
-  if (name.length < 3) errors.push({ code: 400, error: 'field "name" must contain at least 3 characters long' });
+  if (!name) return errors.push({ code: 400, error: 'O campo "nome" é obrigatório' });
+  if (name.length < 3) errors.push({ code: 400, error: 'O campo "nome" deve conter no mínimo 3 caracteres' });
 }
 
 async function validateEmail(email) {
-  if (!email) return errors.push({ code: 400, error: 'field "email" is required' });
-  if (!validator.isEmail(email)) errors.push({ code: 400, error: 'invalid email' });
+  if (!email) return errors.push({ code: 400, error: 'O campo "e-mail" é obrigatório' });
+  if (!validator.isEmail(email)) errors.push({ code: 400, error: 'E-mail inválido' });
   const alreadyExists = await User.findOne({ where: { email } });
-  if (alreadyExists) errors.push({ code: 401, error: 'email already in use' })
+  if (alreadyExists) errors.push({ code: 401, error: 'E-mail já cadastrado' })
 }
 
 function validatePassword(password) {
-  if (!password) return errors.push({ code: 400, error: 'field "password" is rquired' });
-  if (password.length < 6) errors.push({ code: 400, error: 'field "password" must contain at leasst 6 characters long' });
+  if (!password) return errors.push({ code: 400, error: 'O campo "senha" é obrigatório' });
+  if (password.length < 6) errors.push({ code: 400, error: 'O campo "senha" deve conter no mínimo 6 caracteres' });
 }
 
 async function validateData(name, email, password) {
