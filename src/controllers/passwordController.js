@@ -29,7 +29,7 @@ async function recover(req, res) {
     from: `ConsumerBook <${process.env.EMAIL_USER}>`,
     to: `${email}`,
     sibject: 'Recuperação de Senha',
-    html: `Olá clique no link a seguir para recuperar a sua senha <br> <a href=http://localhost:3000/reset-pwd/${user.id}/${email}/${token}>recuperar senha<a>`
+    html: `Olá clique no link a seguir para recuperar a sua senha <br> <a href=http://localhost:3000/password-reset/${user.id}/${email}/${token}>recuperar senha<a>`
   });
   res.status(200).json({ message: 'email enviado'});
 }
