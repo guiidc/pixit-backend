@@ -9,7 +9,7 @@ O backend é uma API feita em NodeJS utilizando a arquitetura MSC seguindo o pad
 
 O frontend é uma aplicação em ReactJS, onde são feitas as requisições para a API para que possa trabalhar com os dados.
 
-<img src="./screenshots/login.jpg" width="350px">
+<img src="https://github.com/guiidc/pixit-backend/screenshots/login.png" width="350px">
 
 ## Tecnologias utilizadas
 ### Back-End
