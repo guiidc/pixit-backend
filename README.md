@@ -11,7 +11,7 @@ O frontend é uma aplicação em ReactJS, onde são feitas as requisições para
 
 <img src="https://github.com/guiidc/pixit-backend/blob/main/screenshots/login.png?raw=true" width="500px">
 <img src="https://github.com/guiidc/pixit-backend/blob/main/screenshots/register.png?raw=true" width="500px">
-<img src="https://github.com/guiidc/pixit-backend/blob/main/screenshots/password-recovery.png?raw=true" width="500px">
+<img src="https://github.com/guiidc/pixit-backend/blob/main/screenshots/password-recover.png?raw=true" width="500px">
 <img src="https://github.com/guiidc/pixit-backend/blob/main/screenshots/password-reset.png?raw=true" width="500px">
 <img src="https://github.com/guiidc/pixit-backend/blob/main/screenshots/list.png?raw=true" width="500px">
 <img src="https://github.com/guiidc/pixit-backend/blob/main/screenshots/insert-edit.png?raw=true" width="500px">
