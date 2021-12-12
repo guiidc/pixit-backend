@@ -1,6 +1,6 @@
-# Desafio Pixit Back-End
+# Desafio Pixit Back-End :rocket:
 
-## Sobre o projeto
+## Sobre o projeto :package:
 Este projeto é uma entrevista técnica para a empresa Pixit, onde há a intenção de testar os conhecimentos através de um CRUD básico.
 
 O projeto está dividido em dois repositórios (BackEnd e FrontEnd).
@@ -16,8 +16,8 @@ O frontend é uma aplicação em ReactJS, onde são feitas as requisições para
 <img src="https://github.com/guiidc/pixit-backend/blob/main/screenshots/list.png?raw=true" width="500px">
 <img src="https://github.com/guiidc/pixit-backend/blob/main/screenshots/insert-edit.png?raw=true" width="500px">
 
-## Tecnologias utilizadas
-### Back-End
+## Tecnologias utilizadas :hammer_and_wrench:
+### Back-End :earth_africa:
 - NodeJs
 - Express
 - BcryptJs
@@ -29,13 +29,13 @@ O frontend é uma aplicação em ReactJS, onde são feitas as requisições para
 - DotEnv
 - Cors
 
-### Front-End
+### Front-End :computer:
 - ReactJS
 - React Router Dom
 - Axios
 
 
-### Instruções Back-End
+### Instruções Back-End :scroll:
 1. Após clonar o repositório rode o comando `npm install` para instalar as dependências necessárias.
 2. Crie uma arquivo .env na raiz do projeto para setar as variaveis de ambiente a seguir
 + DB_USER=usuário do seu banco de dados MySQL geralmente é "root"
@@ -53,7 +53,7 @@ npx sequelize-cli db:seed:all
 
 4. Caso não exista nenhuma porta setada no arquivo .env a porta padrão para a aplicação rodar será na porta 3001, certifique-se de que a porta em questão não está sendo utilizada no momento por outra aplicação. Para iniciar o servidor basta digitar o comando `$ npm start` no terminal
 
-### Instruções Front-End
+### Instruções Front-End :scroll:
 1. Após clonar o repositório execute o comando `npm install` para instalar as dependências necessárias.
 2. Verifique se o servidor Back-End está online e execute o comando `npm start` para iniciar a aplicação
 3. Obs.: A aplicação front roda na porta 3000 e faz a requisção para o back-end que está na porta 3001. Ao executar verifique se alguma dessas portas não estão sendo usadadas por outros serviços.
