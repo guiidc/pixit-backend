@@ -1,4 +1,4 @@
-# Desafio Pixit Front-End
+# Desafio Pixit Back-End
 
 ## Sobre o projeto
 Este projeto é uma entrevista técnica para a empresa Pixit, onde há a intenção de testar os conhecimentos através de um CRUD básico.
